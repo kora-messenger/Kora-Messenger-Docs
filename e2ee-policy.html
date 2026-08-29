@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kora Messenger — End-to-End Encryption Policy</title>
+<style>
+:root{--purple:#7C3AED;--blue:#2563EB;--bg:#FFFFFF;--card:#F8F9FB;--text:#0A0A14;--muted:#6B6B80;--border:#E8EAF0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;padding:24px 16px;max-width:720px;margin:0 auto}
+h1{font-size:1.6rem;background:linear-gradient(135deg,var(--purple),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px}
+.meta{color:var(--muted);font-size:0.85rem;margin-bottom:24px}
+h2{font-size:1.15rem;color:var(--purple);margin-top:28px;margin-bottom:8px}
+p{margin-bottom:12px;color:var(--text)}
+ul,ol{margin-left:20px;margin-bottom:12px}
+li{color:var(--text);margin-bottom:4px}
+li::marker{color:var(--purple)}
+blockquote{border-left:3px solid var(--purple);padding:12px 16px;margin:16px 0;color:var(--text);background:var(--card);border-radius:0 8px 8px 0}
+strong{color:var(--text)}
+.note{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin:20px 0}
+.note strong{color:var(--purple)}
+a{color:var(--purple);text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<h1>Kora Messenger — End-to-End Encryption Policy</h1>
+<div class="meta">
+Effective Date: August 29, 2026<br>
+Last Updated: August 29, 2026
+</div>
+
+<p>Kora Messenger is committed to protecting the privacy and security of users' private communications. Where End-to-End Encryption (E2EE) is supported, Kora is designed so that communication content is encrypted before it leaves the sender's device and can only be decrypted by authorized recipient device(s).</p>
+
+<h2>1. What End-to-End Encryption Protects</h2>
+<p>E2EE-protected communication may include:</p>
+<ul>
+<li>Text messages</li>
+<li>Voice messages</li>
+<li>Photos</li>
+<li>Videos</li>
+<li>Documents</li>
+<li>Audio files</li>
+<li>Shared media</li>
+<li>One-to-one voice calls</li>
+<li>One-to-one video calls</li>
+<li>Group messages</li>
+<li>Group voice calls</li>
+<li>Group video calls</li>
+<li>Other supported private communications</li>
+</ul>
+
+<h2>2. Kora Cannot Read E2EE Messages</h2>
+<p>For E2EE-protected conversations, Kora's servers are designed to handle encrypted information required to deliver and operate the service without having access to the decrypted conversation content.</p>
+<p>Messages may be temporarily stored in encrypted form when a recipient is offline and delivered when the recipient reconnects.</p>
+
+<h2>3. Encryption Keys</h2>
+<p>Encryption keys should be generated, stored, and managed securely by authorized Kora devices.</p>
+<p>Kora should not store users' private encryption keys in ordinary readable server-side storage.</p>
+<p>Kora will use established and appropriately reviewed cryptographic protocols and libraries rather than creating its own proprietary encryption algorithm.</p>
+
+<h2>4. Voice Notes and Media</h2>
+<p>Supported voice notes, photos, videos, documents, and other private media should be encrypted before transmission.</p>
+<p>Encrypted media may pass through Kora's servers for delivery or temporary storage, but Kora should not have access to the plaintext content when E2EE applies.</p>
+<p>This also applies to voice notes sent while the recipient is offline.</p>
+
+<h2>5. Group Chats</h2>
+<p>Supported private group conversations should receive E2EE protection.</p>
+<p>Kora's encryption system should properly account for:</p>
+<ul>
+<li>Adding members</li>
+<li>Removing members</li>
+<li>New devices</li>
+<li>Removed devices</li>
+<li>Group membership changes</li>
+<li>Message delivery</li>
+<li>Media sharing</li>
+</ul>
+<p>When membership changes, encryption access should be updated appropriately.</p>
+
+<h2>6. Voice and Video Calls</h2>
+<p>Supported Kora voice and video calls should use E2EE to protect call audio and video from access by Kora's servers.</p>
+<p>Call signaling and technical information required to establish and maintain calls may still be processed by Kora.</p>
+<p>E2EE protects communication content and does not necessarily eliminate all metadata.</p>
+
+<h2>7. Message Delivery</h2>
+<p>For protected conversations:</p>
+<ul>
+<li>User A writes a message</li>
+<li>→ Message is encrypted on User A's device</li>
+<li>→ Encrypted message is transmitted</li>
+<li>→ Kora routes the encrypted message</li>
+<li>→ Recipient receives it</li>
+<li>→ Recipient's authorized device decrypts it</li>
+</ul>
+<p>Kora should not need to decrypt the message to deliver it.</p>
+
+<h2>8. Multiple Devices</h2>
+<p>When users connect additional authorized devices, Kora should establish secure encryption relationships for those devices.</p>
+<p>Each authorized device should receive the cryptographic information necessary to participate in protected conversations.</p>
+<p>Removing a device should prevent it from participating in future protected communications where technically appropriate.</p>
+
+<h2>9. Security Verification</h2>
+<p>Kora may provide security-verification mechanisms that allow users to confirm that they are communicating with the intended person or account.</p>
+<p>These may include security codes, QR-code verification, safety numbers, or another appropriate verification method.</p>
+<p>Users should verify sensitive conversations when additional identity assurance is needed.</p>
+
+<h2>10. Backups</h2>
+<p>Kora will clearly distinguish between E2EE-protected conversations and backups or exported information.</p>
+<p>Where Kora provides cloud backups containing private communication content, Kora should use strong encryption.</p>
+<p>Where technically supported, Kora should provide E2EE-protected backups so that Kora cannot access the contents of the backup.</p>
+<p>Users may need a recovery key, password, passcode, or other recovery method to restore an encrypted backup.</p>
+
+<h2>11. Kora AI and Translation</h2>
+<p>E2EE protection must be clearly distinguished from AI-powered processing.</p>
+<p>If a user asks Kora AI to understand, translate, transcribe, summarize, or otherwise process the content of a protected message, voice note, image, video, or document, the content may need to be decrypted or made available to the processing system.</p>
+<p>Kora must not claim that content is inaccessible to an AI system when that AI system needs to access the content to perform the requested function.</p>
+<p>Kora should process only the information necessary to provide the requested AI feature.</p>
+
+<h2>12. Kora Support</h2>
+<p>Kora should clearly identify whether communication with Kora Support is E2EE-protected.</p>
+<p>If authorized support personnel need access to a message in order to provide support, Kora must not falsely represent that the message is inaccessible to Kora.</p>
+
+<h2>13. Notifications</h2>
+<p>Kora should minimize the amount of private message content exposed through device notifications.</p>
+<p>Users should have control over notification previews where supported.</p>
+
+<h2>14. Device Security</h2>
+<p>E2EE cannot protect communication from someone who already has access to an unlocked or compromised device.</p>
+<p>Users should protect their devices using:</p>
+<ul>
+<li>Device passcodes</li>
+<li>Biometrics</li>
+<li>Kora App Lock</li>
+<li>Strong account security</li>
+<li>Two-step verification where available</li>
+<li>Trusted-device management</li>
+</ul>
+
+<h2>15. Compromised Accounts</h2>
+<p>If an attacker obtains access to an authorized user's account or device, they may potentially access information available to that device.</p>
+<p>Kora should provide tools to help users identify unauthorized devices and secure their accounts.</p>
+
+<h2>16. No Silent Downgrade</h2>
+<p>Where E2EE is required for a supported private conversation, Kora should not silently downgrade the communication to an unencrypted form.</p>
+<p>If the required security cannot be maintained, Kora should clearly communicate the situation to the user rather than silently reducing protection.</p>
+
+<h2>17. Limitations</h2>
+<p>E2EE does not prevent:</p>
+<ul>
+<li>Screenshots</li>
+<li>Screen recording</li>
+<li>Someone photographing another device</li>
+<li>Message forwarding</li>
+<li>External call recording</li>
+<li>Malware on a device</li>
+<li>Someone with access to an unlocked device</li>
+<li>A recipient intentionally sharing private content</li>
+</ul>
+<p>E2EE protects communication between authorized endpoints. It cannot control what an authorized recipient does with information after receiving it.</p>
+
+<h2>18. Kora's Commitment</h2>
+<p>Kora Messenger is committed to making privacy and security an integral part of the communication experience.</p>
+<p>Kora will continue improving:</p>
+<ul>
+<li>Encryption</li>
+<li>Key management</li>
+<li>Authentication</li>
+<li>Device security</li>
+<li>Account security</li>
+<li>Privacy controls</li>
+<li>Secure backups</li>
+<li>Communication security</li>
+</ul>
+<p>For supported E2EE communications, Kora's goal is simple:</p>
+<blockquote>Your private communication should remain accessible only to the people and authorized devices intended to receive it.</blockquote>
+
+</body>
+</html>
