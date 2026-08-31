@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Face and Hands Effects Privacy Notice — Kora Messenger</title>
+<style>
+
+:root {
+  --purple: #7C3AED;
+  --blue: #2563EB;
+  --bg: #FFFFFF;
+  --card-bg: #F8F9FB;
+  --text: #0A0A14;
+  --muted: #6B6B80;
+  --border: #E8EAF0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 0 16px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+.header {
+  text-align: center;
+  padding: 40px 0 32px;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+}
+h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.updated {
+  color: var(--muted);
+  font-size: 13px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 28px 0 14px;
+  color: var(--purple);
+}
+.card > h2:first-child { margin-top: 0; }
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--text);
+}
+p {
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 15px;
+}
+ul, ol {
+  margin: 0 0 16px 20px;
+  font-size: 15px;
+}
+li {
+  margin-bottom: 8px;
+}
+li::marker {
+  color: var(--purple);
+}
+a {
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+.highlight {
+  border-left: 4px solid var(--purple);
+  padding: 12px 18px;
+  margin: 16px 0;
+  background: rgba(124, 58, 237, 0.06);
+  border-radius: 0 10px 10px 0;
+  font-size: 14.5px;
+}
+code {
+  background: #EEF2FF;
+  color: var(--purple);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9em;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}
+.tagline {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 32px;
+  font-size: 14px;
+}
+.footer {
+  text-align: center;
+  padding: 24px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+@media(max-width:600px){
+  .card { padding: 20px 16px; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">K</div>
+    <h1>Face and Hands Effects Privacy Notice</h1>
+    <p class="subtitle">Privacy Disclosures for Camera Filters, Hand Gestures, and AR Overlays</p>
+    <p class="updated">Effective Date: August 31, 2026</p>
+  </div>
+
+  <div class="card">
+    <h2>1. Overview</h2>
+    <p>Kora Messenger offers optional camera-based visual effects—including face filters, hand gesture controls, virtual backgrounds, and augmented reality (AR) overlays—during video calls and media capture. This Privacy Notice explains how our effects pipeline operates with zero compromise to your privacy.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. On-Device Processing Only</h2>
+    <p>ALL face and hand tracking, landmark detection, and effect rendering occur <strong>100% locally on your device hardware</strong> using local neural networks and computer vision frameworks.</p>
+    <div class="highlight">
+      <strong>Zero Server Transmission:</strong> No facial coordinate data, hand tracking points, raw image frames, or video streams are ever transmitted to Kora's cloud servers or any third-party infrastructure.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>3. No Facial Recognition or Biometric Identification</h2>
+    <p>Kora does <strong>NOT</strong> perform facial recognition, facial identification, or biometric identity verification.</p>
+    <p>The effects system detects general spatial landmark coordinates (e.g., relative positions of eyes, nose, mouth, fingers) in real-time solely to anchor visual filter elements on screen. It cannot and does not identify who you are, nor does it create a unique biometric identity profile.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Ephemeral Processing — No Biometric Storage</h2>
+    <p>Facial and hand tracking processing is strictly ephemeral. Camera video frames are processed frame-by-frame in real-time RAM and are immediately overwritten and discarded. No facial mesh data, landmark vectors, or biometric templates are stored on your device storage or on cloud servers.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. No Machine Learning AI Training</h2>
+    <p>Your camera feeds, facial landmarks, and hand gesture data are <strong>NEVER used to train machine learning models or AI algorithms</strong>. No media frames are uploaded, cached, or saved for analysis.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Operating System Camera Permissions</h2>
+    <p>Face and hand visual effects require explicit operating system camera permissions (Android / iOS). You can grant or revoke camera permissions at any time through your mobile device's system settings. Visual effects are entirely disabled when camera permissions are revoked.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. On-Device Third-Party SDK Frameworks</h2>
+    <p>Where third-party AR frameworks or platform-native vision libraries (e.g. Apple CoreML/Vision on iOS, Google ML Kit/ARCore on Android) are utilized, processing operates strictly within local system memory without transmitting camera telemetry outside the local device environment.</p>
+  </div>
+
+  <div class="card">
+    <h2>8. Children's Privacy Notice</h2>
+    <p>Face and hand visual effects are not directed at children under the age of 13. We encourage parents and guardians to manage camera permission controls on devices accessed by minors.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. Zero Data Retention Policy</h2>
+    <p>We enforce an absolute zero data retention policy for camera visual effects. No facial points, hand contours, or video frames are cached, stored, or retained in any form.</p>
+  </div>
+
+  <div class="card">
+    <h2>10. Your Privacy Rights and Controls</h2>
+    <p>You maintain full control over visual effects:</p>
+    <ul>
+      <li>Toggle visual effects on or off instantly during calls or video capture.</li>
+      <li>Revoke device camera access via OS settings.</li>
+      <li>Contact our Privacy Office at <a href="mailto:privacy@koramessenger.com">privacy@koramessenger.com</a> for any technical or privacy inquiries.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>11. GDPR Compliance (Art. 9 Statement)</h2>
+    <p>Under Article 9 of the EU GDPR, special category biometric data processing occurs when data is processed for the purpose of uniquely identifying a natural person. Because Kora's face and hand tracking operates ephemerally on-device solely for filter placement without biometric identification or data retention, it does <strong>NOT constitute processing of special category biometric data under Art. 9 GDPR</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2>12. Contact Information</h2>
+    <p>For questions regarding this Face and Hands Effects Privacy Notice:</p>
+    <p><strong>Kora Privacy Team:</strong> <a href="mailto:privacy@koramessenger.com">privacy@koramessenger.com</a></p>
+  </div>
+
+  <div class="tagline">
+    <p><strong>Kora Messenger Visual Effects</strong></p>
+    <p>Fun, Expressive AR Effects Powered Entirely On Your Device.</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 Kora Messenger. All rights reserved.</p>
+  </div>
+</div>
+</body>
+</html>
