@@ -155,4 +155,4 @@ Key design facts that keep this cheap:
 
 ---
 
-*Owner: Ijezie / Nexora Technologies. Execute phase by phase — do not skip exit criteria.*
+*Owner: Ijezie / Veltravia Technologies. Execute phase by phase — do not skip exit criteria.*
